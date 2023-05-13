@@ -12,8 +12,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '~/consts';
     <script defer data-domain="blog.jorgeadolfo.com" src="https://a.jorgeadolfo.com/script.js"></script>
 	</head>
 	<body>
-    <div class="container max-w-2xl flex flex-col gap-4 mx-auto">
-      <Header title={SITE_TITLE} />
+    <Header title={SITE_TITLE} />
+    <div class="container max-w-2xl flex flex-col gap-4 mx-auto main">
       <main class="flex flex-col gap-4">
         <slot /> 
       </main>
@@ -24,5 +24,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '~/consts';
 <style is:global>
 body {
   background-color: #f6f6f6;
+}
+.main {
+  margin-top: 82px;
 }
 </style>
