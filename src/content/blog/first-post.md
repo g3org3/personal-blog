@@ -2,7 +2,6 @@
 title: "My first post"
 description: "yes"
 pubDate: "Oct 30 2016"
-heroImage: "/placeholder-hero.jpg"
 ---
 
 ## MicroBlogPost

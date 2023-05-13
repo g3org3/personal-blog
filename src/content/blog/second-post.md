@@ -2,7 +2,7 @@
 title: "Good Bye 2017"
 description: "bla"
 pubDate: "Jan 29 2018"
-heroImage: "/placeholder-hero.jpg"
+heroImage: "https://cdn-images-1.medium.com/max/1600/1*AnN2EMHo8tnLPcUAg5OqsQ.jpeg"
 ---
 
 # Good bye 2017 :0:
@@ -69,5 +69,3 @@ _This will be the year of more react.js, bitcoin and machine learning!_
 ### 2018’s motto: FOCUS!
 
 #### Don't forget to have fun and enjoy 2018!
-
-![a](https://cdn-images-1.medium.com/max/1600/1*AnN2EMHo8tnLPcUAg5OqsQ.jpeg)
