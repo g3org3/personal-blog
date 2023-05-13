@@ -29,13 +29,19 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   </article>
 </MainLayout>
 <style is:global>
-h2, h3, h4 {
+.content > h2, h3, h4 {
   font-weight: bold;
 }
-p {
+.content p {
   margin-top: 20px;
 }
-ul {
+.content ul {
   list-style: square inside;
+}
+.content a {
+  color: blue;
+}
+.content a:hover {
+  text-decoration: underline;
 }
 </style>

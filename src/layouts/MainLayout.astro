@@ -9,6 +9,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '~/consts';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <script defer data-domain="blog.jorgeadolfo.com" src="https://a.jorgeadolfo.com/script.js"></script>
 	</head>
 	<body>
     <div class="container max-w-2xl flex flex-col gap-4 mx-auto">
@@ -20,7 +21,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '~/consts';
     </div>
 	</body>
 </html>
-<style>
+<style is:global>
 body {
   background-color: #f6f6f6;
 }

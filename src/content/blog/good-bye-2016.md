@@ -2,7 +2,6 @@
 title: "Good bye 2016 :):"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Dec 29 2016"
-heroImage: "/placeholder-hero.jpg"
 ---
 ### Good bye 2016 :):
 
