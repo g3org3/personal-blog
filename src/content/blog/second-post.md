@@ -1,16 +1,73 @@
 ---
-title: "Second post"
-description: "Lorem ipsum dolor sit amet"
-pubDate: "Jul 22 2022"
+title: "Good Bye 2017"
+description: "bla"
+pubDate: "Jan 29 2018"
 heroImage: "/placeholder-hero.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+# Good bye 2017 :0:
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Wow another amazing year has passed and I can not describe the feeling of this new adventure. I didn’t expect to travel to the other side of the world and live here in Europe for a year. 2016 left me with a lot of changes and scary moments in life that made me grow up more and more. Now 2017 even more changes, surprisingly raising the bar a lot more. I am very thankful though of having this opportunity to be in this unknown adventure. Leaving that to the side and talking more about tech this year I learn more stuff about react, redux, electron and many stuff about that ecosystem. Is amazing how react’s community is growing. Also this year left me with a different perspective on how to solve the problem of creating a new app/project. create-react-app was really inspiring to fix all my templates, a.k.a cloning a repo and deleting the stuff you won’t need. But it is essential to have these templates for basics apps and creating modules to increase productivity in this 2018. So here it comes the 2018 GOALS and the scary anual report.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+2017 Goals — Anual Report :S [copied from 2017 post]
+I will give a rating from 0to 10, 10 being completed and 0 being nothing done.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+**Expecting:**
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+- do tutorials, guides or sample projects [score: 4]
+- with nodejs, docker, react, ansible… [8, 5, 9, 1]
+- do 5 posts per month, so write about 60 posts for next year [3]
+- learn RxJS [0]
+- learn GO [3]
+- learn css flex [10]
+- finish a leadership course [4]
+- finish double your productivity course in udemy [0]
+- Do things that improve other peoples lives [7]
+- test all! [5]
+- organize from the beginning [6]
+- Read 6 books [0]
+- contribute in open source projects [5]
+
+**Did stuff did not expected**
+
+- Living in another country for a year, (already 4 months here)
+- started an open source project
+- started to learn french
+- went to a github universe conference
+- quit my job
+- invest in bitcoin
+- learn about software-defined networks
+- next.js
+- create my chatbot (jarvis) :D with machine learning (api.ai)
+- produced a new song
+
+#### 2018 Goals!
+
+- do tutorials, guides or sample projects…
+- do 1 post per month, so write about 12 posts for next year (this counting as the first one :D)
+- invest more in crypto currencies
+- create templates for basic apps, must be minimum of 3
+- improve yagg
+- create my own react-scripts
+- take a machine learning
+- take a trading course
+- develop a trading-bot
+- Read 3 books this year [will update with the names]
+- travel to: Bremen, Berlin, London, Dublin (Ireland), Madrid, Rome, Venice, Lyon, Brussels, Amsterdam, Prague, Russia
+- take a productivity course
+- participate in hacktoberfest
+- My dashboard to manage servers
+- Do things that improve other peoples lives
+- More into next.js
+- after.js
+- graphql
+- Automation
+- Workout!
+
+_This will be the year of more react.js, bitcoin and machine learning!_
+
+### 2018’s motto: FOCUS!
+
+#### Don't forget to have fun and enjoy 2018!
+
+![a](https://cdn-images-1.medium.com/max/1600/1*AnN2EMHo8tnLPcUAg5OqsQ.jpeg)

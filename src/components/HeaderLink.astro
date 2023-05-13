@@ -9,7 +9,7 @@ const { pathname } = Astro.url;
 const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 ---
 
-<a href={href} class="bg-slate-200 hover:shadow hover:bg-slate-300 active:ring-2 ring-offset-2 ring-slate-500 px-4 py-2 rounded" class:list={[className, { active: isActive }]} {...props}>
+<a href={href} class="text-sm hover:bg-gray-200 gap-1 flex shrink-0 items-center transition-colors active:ring-2 ring-offset-2 ring-slate-500 px-2 py-1 rounded" class:list={[className, { active: isActive }]} {...props}>
 	<slot />
 </a>
 <style>
