@@ -24,3 +24,5 @@ console.log(result + 1) // ❌ ERR
 ```
 
 In this guide, we will explore the usage of TypeScript comments in JavaScript files, highlighting how they can enhance code quality, improve development productivity, and provide a stepping stone for a more comprehensive adoption of TypeScript in your project.
+
+reference: https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
