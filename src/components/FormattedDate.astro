@@ -2,18 +2,56 @@
 export interface Props {
 	date: Date;
   isFull?: boolean;
+  class?: string;
 }
-const { date, isFull } = Astro.props;
+const { date, isFull, class: className } = Astro.props;
+
+export function formatRelativeTime(date: Date) {
+  const now = new Date();
+  // @ts-ignore
+  const diffInMilliseconds = date - now;
+
+  // Calculate the difference in seconds
+  const diffInSeconds = Math.round(diffInMilliseconds / 1000);
+
+  // Create a RelativeTimeFormat instance
+  const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+
+  // Define the thresholds for different units
+  const thresholds = {
+    year: 60 * 60 * 24 * 365,
+    month: 60 * 60 * 24 * 30,
+    day: 60 * 60 * 24,
+    hour: 60 * 60,
+    minute: 60,
+  } as const;
+
+  // Find the appropriate unit based on the time difference
+  for (const unit in thresholds) {
+    const threshold = thresholds[unit as keyof typeof thresholds];
+    if (Math.abs(diffInSeconds) >= threshold) {
+      const value = Math.round(diffInSeconds / threshold);
+      return rtf.format(value, unit as never);
+    }
+  }
+
+  // If none of the units match, return the default format
+  return rtf.format(0, 'second');
+}
+
 ---
 
-<time class="px-2 font-mono text-gray-500" datetime={date.toISOString()}>
+<time class={["font-mono text-gray-500", className].filter(Boolean).join(' ')} datetime={date.toISOString()}>
 	{
 		!isFull ? date.toLocaleDateString('fr-fr', {
 			year: 'numeric',
-		}) : date.toLocaleDateString('en-us', {
-			year: 'numeric',
-      month: 'short',
-      day: 'numeric',
-		})
+		}) : <>
+      {date.toLocaleDateString('en-us', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+      })}
+      <span class="ml-4">({formatRelativeTime(date)})</span>
+    </>
 	}
 </time>

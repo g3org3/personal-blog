@@ -1,27 +1,4 @@
 ---
-import { getCollection } from 'astro:content';
-import FormattedDate from '~/components/FormattedDate.astro';
-import MainLayout from '~/layouts/MainLayout.astro';
-
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+import Blogs from "~/components/Blogs.astro";
 ---
-<MainLayout>
-  <section class="flex flex-col font-mono">
-    <div class="flex gap-4 border-b text-gray-500">
-      <span class="p-2">date</span>
-      <span class="p-2 flex-1">title</span>
-    </div>
-      {
-        posts.map((post) => (
-          <a class="flex gap-4 border-t hover:bg-gray-200 transition-colors" href={`/blog/${post.slug}/`}>
-            <span class="p-2"><FormattedDate date={post.data.pubDate} /></span>
-            <span class="p-2">
-              {post.data.title}
-            </span>
-          </a>
-        ))
-      }
-  </section>
-</MainLayout>
+<Blogs />

@@ -10,17 +10,16 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 <MainLayout>
   <article class="flex flex-col gap-4">
     {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-    <div class="flex px-2 items-end">
-    <h1 class="text-2xl">{title}</h1>
-    <div class="flex-1"></div>
-    <FormattedDate isFull date={pubDate} />
-    {
+    <div class="flex px-2 flex-col">
+      <h1 class="text-2xl">{title}</h1>
+      <FormattedDate class="text-sm" isFull date={pubDate} />
+      {
       updatedDate && (
         <div class="last-updated-on">
           Last updated on <FormattedDate isFull date={updatedDate} />
         </div>
       )
-    }
+      }
     </div>
     <hr />
     <div class="px-2 content">
@@ -31,15 +30,22 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 <style is:global>
 .content > h2, h3, h4 {
   font-weight: bold;
+  margin-top: 20px;
 }
-.content p {
+.content p, .content code {
   margin-top: 20px;
 }
 .content ul {
   list-style: square inside;
 }
 .content a {
-  color: blue;
+  color: #2196F3;
+}
+
+@media (prefers-color-scheme: dark) {
+  .content a {
+    color: #03a9f4;
+  }
 }
 .content a:hover {
   text-decoration: underline;
