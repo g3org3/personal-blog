@@ -32,11 +32,19 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   font-weight: bold;
   margin-top: 20px;
 }
-.content p, .content code {
+.content p, .content pre {
   margin-top: 20px;
 }
+
+.content pre {
+  padding: 12px;
+  border-radius: 10px;
+}
 .content ul {
-  list-style: square inside;
+  padding-left: 10px;
+}
+.content li::before {
+  content: '— '
 }
 .content a {
   color: #2196F3;
