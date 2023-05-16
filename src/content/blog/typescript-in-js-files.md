@@ -1,6 +1,7 @@
 ---
 title: 'Typescript in js files'
 pubDate: 'May 13, 2023'
+heroImage: '/typescript.png'
 ---
 ## Introduction to Using TypeScript Comments in JavaScript Files
 
@@ -25,4 +26,26 @@ console.log(result + 1) // ❌ ERR
 
 In this guide, we will explore the usage of TypeScript comments in JavaScript files, highlighting how they can enhance code quality, improve development productivity, and provide a stepping stone for a more comprehensive adoption of TypeScript in your project.
 
-reference: https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
+reference: [typescriptlang/jsdoc](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
+
+```javascript
+// @ts-check
+
+/**
+@typedef {{
+  name: string
+  age: number
+}} User
+*/
+
+/** @type{(b: User) => Promise<boolean>} */
+export async function isUserBelow21(b) {
+  return b.age < 21
+}
+
+let result = isUserBelow21("")
+result = isUserBelow21({ name: "alice", age: 22 })
+if (isUserBelow21({ name: "bob", age: 21 })) {
+  console.log('Welcome!')
+}
+```
