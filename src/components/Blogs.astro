@@ -1,27 +1,36 @@
 ---
-import { getCollection } from 'astro:content';
-import FormattedDate from '~/components/FormattedDate.astro';
-import MainLayout from '~/layouts/MainLayout.astro';
+import { getCollection } from "astro:content";
+import FormattedDate from "~/components/FormattedDate.astro";
+import MainLayout from "~/layouts/MainLayout.astro";
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
+
 <MainLayout>
-  <section class="flex flex-col font-mono">
-    <div class="flex gap-4 border-b text-gray-500 dark:border-gray-600 dark:text-gray-400">
+  <section class="flex flex-col font-mono px-4">
+    <div
+      class="flex gap-4 border-b text-gray-500 dark:border-gray-600 dark:text-gray-400"
+    >
       <span class="p-2">date</span>
       <span class="p-2 flex-1">title</span>
     </div>
-      {
-        posts.map((post) => (
-          <a class="flex gap-4 border-t dark:border-slate-600 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group/post" href={`/blog/${post.slug}/`}>
-            <span class="p-2"><FormattedDate class="dark:text-gray-400" date={post.data.pubDate} /></span>
-            <span class="p-2 group-hover/post:underline">
-              {post.data.title}
-            </span>
-          </a>
-        ))
-      }
+    {
+      posts.map((post) => (
+        <a
+          class="flex gap-4 border-t dark:border-slate-600 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group/post"
+          href={`/blog/${post.slug}/`}
+        >
+          <span class="p-2">
+            <FormattedDate
+              class="dark:text-gray-400"
+              date={post.data.pubDate}
+            />
+          </span>
+          <span class="p-2 group-hover/post:underline">{post.data.title}</span>
+        </a>
+      ))
+    }
   </section>
 </MainLayout>
