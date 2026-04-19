@@ -11,7 +11,7 @@ const posts = (await getCollection("blog")).sort(
 <MainLayout>
   <section class="flex flex-col font-mono px-4">
     <div
-      class="flex gap-4 border-b text-gray-500 dark:border-gray-600 dark:text-gray-400"
+      class="flex gap-4 text-gray-500 dark:text-gray-400"
     >
       <span class="p-2">date</span>
       <span class="p-2 flex-1">title</span>
@@ -19,12 +19,12 @@ const posts = (await getCollection("blog")).sort(
     {
       posts.map((post) => (
         <a
-          class="flex gap-4 border-t dark:border-slate-600 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group/post"
+          class="flex gap-4 border-t border-gray-200 dark:border-slate-600 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group/post"
           href={`/blog/${post.id}/`}
         >
           <span class="p-2">
             <FormattedDate
-              class="dark:text-gray-400"
+              class="text-gray-400"
               date={post.data.pubDate}
             />
           </span>
